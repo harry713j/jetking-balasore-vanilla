@@ -1,0 +1,391 @@
+:root {
+  --red: #ff0000;
+  --white: #f8fafc;
+  --black: #31363f;
+  --highlight: #fcc737;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* NAVIGATION BAR */
+
+.header {
+  background-color: var(--red);
+  padding: 1rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 14%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.navbar {
+  width: 70%;
+  padding: 0 4rem;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul li {
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--white);
+  transition: border 500ms ease-in-out;
+  text-transform: capitalize;
+  border-bottom: 1.5px solid transparent;
+}
+
+.navbar ul li a:hover {
+  border-bottom: 1.5px solid var(--white);
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 4rem 8rem 1rem 8rem;
+  background-color: var(--black);
+  margin-top: 6rem;
+}
+
+.footer__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.row__1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col__1 {
+  width: 20%;
+}
+
+.col__1 div {
+  width: 100%;
+}
+
+.col__1 div img {
+  width: 100%;
+}
+
+.col__2 {
+  width: 60%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.important__link {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.important__link h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.important__link span {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.important__link span a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--white);
+  opacity: 0.8;
+  transition: all 0.4s ease-in-out;
+}
+
+.important__link span a:hover {
+  text-decoration: underline;
+}
+
+.help {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.help h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.help span {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.help span a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--white);
+  opacity: 0.8;
+  transition: all 0.4s ease-in-out;
+}
+
+.help span a:hover {
+  text-decoration: underline;
+}
+
+.address {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.address h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.address span p {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--white);
+  opacity: 0.8;
+  transition: all 0.4s ease-in-out;
+}
+
+.row__2 {
+  align-self: center;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.row__2 h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.row__2 p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--white);
+  opacity: 0.5;
+}
+
+.social__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social__container a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5rem;
+  color: var(--white);
+  transition: color 0.4s ease-out;
+}
+
+.social__container a:hover {
+  color: var(--red);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 8rem;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--red);
+}
+
+.heading p {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--black);
+  opacity: 0.7;
+}
+
+.heading p a {
+  text-decoration: none;
+  background-color: var(--highlight);
+  color: var(--black);
+  opacity: 0.8;
+  padding: 0 0.2rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.heading p a:hover {
+  text-decoration: underline;
+}
+
+.batch__83 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.batch__83 h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--red);
+  align-self: flex-start;
+}
+
+.trainees {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  /* border: 1px solid red; */
+}
+
+.trainee {
+  /* width: 30%; */
+  width: 18rem;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  box-shadow: 2px 2px 5px rgba(49, 54, 63, 0.2);
+  border-radius: 0.25rem;
+  background-color: rgba(248, 250, 252, 0.1);
+  overflow: hidden;
+  position: relative;
+  background-color: #6a6b6e;
+}
+
+.trainee:hover {
+  box-shadow: 2px 2px 8px #dc6060, -2px -2px 8px #dc6060;
+}
+
+.trainee::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--black);
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+.trainee:hover::after {
+  opacity: 0.6;
+}
+
+.trainee__details {
+  margin-top: auto;
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+  padding: 2rem 1rem;
+  z-index: 10;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: transparent;
+  transition: color 0.4s ease-in-out;
+  opacity: 0.9;
+}
+
+.age {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: transparent;
+  transition: color 0.4s ease-in-out;
+  opacity: 0.9;
+}
+
+.qualification {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: transparent;
+  transition: color 0.4s ease-in-out;
+  opacity: 0.9;
+}
+
+.trainee:hover .name {
+  color: var(--white);
+}
+
+.trainee:hover .age {
+  color: var(--white);
+}
+
+.trainee:hover .qualification {
+  color: var(--white);
+}
